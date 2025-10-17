@@ -639,6 +639,9 @@ importers:
       '@copilotkit/shared':
         specifier: workspace:*
         version: link:../shared
+      '@copilotkitnext/runtime':
+        specifier: ^0.0.17
+        version: 0.0.17(openai@4.85.2(encoding@0.1.13)(ws@8.18.1)(zod@3.23.8))
       '@graphql-yoga/plugin-defer-stream':
         specifier: ^3.3.1
         version: 3.6.1(graphql-yoga@5.6.1(graphql@16.9.0))(graphql@16.9.0)
@@ -1751,8 +1754,18 @@ packages:
     peerDependencies:
       openai: ^5.9.0
 
+  '@copilotkitnext/runtime@0.0.17':
+    resolution: {integrity: sha512-1pqU+ZW1A898CUIx7+0hCQvuKEXUG4kuUGnN2wIvVTu2shAKOz3GwwNOZM3DLiC8k1ou3TPyjheNYDAGhmnQuA==}
+    engines: {node: '>=18'}
+    peerDependencies:
+      openai: ^5.9.0
+
   '@copilotkitnext/shared@0.0.16':
     resolution: {integrity: sha512-6Nmwmbsne0aNmDsBV2zFT3hKL+t3Np3surOC6R+qK9onPxnR/aQCZfWNTYcGhrJwctpzyP03V8BP37GNdnak3w==}
+    engines: {node: '>=18'}
+
+  '@copilotkitnext/shared@0.0.17':
+    resolution: {integrity: sha512-6uAquOvcNvxJhdu+j6PbiaY4yUnYJ9DzSS0Xr+ISjsSZU14UFo2oynlAim3r9UKxX/bcAI5/Jk52aDkClEtLnQ==}
     engines: {node: '>=18'}
 
   '@copilotkitnext/web-inspector@0.0.16':
@@ -13043,7 +13056,22 @@ snapshots:
       openai: 4.85.2(encoding@0.1.13)(ws@8.18.1)(zod@3.23.8)
       rxjs: 7.8.1
 
+  '@copilotkitnext/runtime@0.0.17(openai@4.85.2(encoding@0.1.13)(ws@8.18.1)(zod@3.23.8))':
+    dependencies:
+      '@ag-ui/client': 0.0.40-alpha.6
+      '@ag-ui/core': 0.0.40-alpha.6
+      '@ag-ui/encoder': 0.0.40-alpha.6
+      '@copilotkitnext/shared': 0.0.17
+      hono: 4.9.12
+      openai: 4.85.2(encoding@0.1.13)(ws@8.18.1)(zod@3.23.8)
+      rxjs: 7.8.1
+
   '@copilotkitnext/shared@0.0.16':
+    dependencies:
+      partial-json: 0.1.7
+      uuid: 11.1.0
+
+  '@copilotkitnext/shared@0.0.17':
     dependencies:
       partial-json: 0.1.7
       uuid: 11.1.0
